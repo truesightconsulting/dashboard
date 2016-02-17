@@ -1,0 +1,11 @@
+variable,type,var,f_3,f_4,f_5,metric
+test1_imp,2,test1,,,,m_2
+test1_spd,2,test1,,,,m_1
+test2_clk_f11_f21_f32,2,test2,f11,f21,f32,m_1
+test2_clk_f11_f21_f31,2,test2,f11,f21,f31,m_1
+test2_clk_f11_f22_f32,2,test2,f11,f22,f32,m_1
+test2_clk_f11_f22_f31,2,test2,f11,f22,f31,m_1
+test2_clk_f12_f21_f32,2,test2,f12,f21,f32,m_1
+test2_clk_f12_f21_f31,2,test2,f12,f21,f31,m_1
+test2_clk_f12_f22_f32,2,test2,f12,f22,f32,m_1
+test2_clk_f12_f22_f31,2,test2,f12,f22,f31,m_1

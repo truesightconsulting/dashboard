@@ -1,0 +1,3 @@
+type,var,date,var_m_1,var_m_2,var_m_3,var_m_4,var_market_1,var_f_5,var_f_4,var_f_3,var_f_2,var_f_1,is_chart,is_table,chart_type
+2,test1,1,spend,click,,,DMA name,,,,Quarter,year,,,
+2,test2,1,click,,,,DMA name,f3,f2,f1,Quarter,year,,,
