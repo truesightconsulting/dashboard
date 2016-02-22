@@ -1,0 +1,2 @@
+client_name,add_time,date_start,date_end,map_type,map_var,update,is.staging,is.new.client
+test2,YEAR,1/1/2015,4/6/2016,1,"1,2,3,4",1,1,0
