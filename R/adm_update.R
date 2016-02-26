@@ -45,7 +45,7 @@ adm_update = function(...) {
   typetable_upload[,c("type_name","type_yaxis"):=NULL]
   typetable_upload[,client_id:=client_id]
   
-  if(is.new.client) dbGetQuery(conn,paste("delete from dsh_modelinput_type where client_id=",client_id,sep=""))
+  dbGetQuery(conn,paste("delete from dsh_modelinput_type where client_id=",client_id,sep=""))
   dbWriteTable(conn,"dsh_modelinput_type",typetable_upload,append=T,row.names = F,header=F)
   
   
@@ -54,14 +54,14 @@ adm_update = function(...) {
   ############################
   
   #Read current tables and vars from DB
-  ex.sample.data=data.table(dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_data'")))
-  ex.sample.setup=data.table(dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_drilldown_setup'")))
-  old_colname_data=ex.sample.data[["COLUMN_NAME"]]
+  old_colname_data=data.table(
+    dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_data'")))[["COLUMN_NAME"]]
   old_colname_data=old_colname_data[grep("_",old_colname_data)]
-  old_colname_setup=ex.sample.setup[["COLUMN_NAME"]]
+  old_colname_setup=data.table(
+    dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_drilldown_setup'")))[["COLUMN_NAME"]]
   old_colname_setup=old_colname_setup[grep("var_",old_colname_setup)]
   
-  
+  setin=cbind(setin,md)
   #Create list for vars and dbs need to be added
   new_colnames_setup=colnames(setin)[grep("var_",colnames(setin))]
   new_colnames_setup=paste(new_colnames_setup,rep("_id",length(new_colnames_setup)),sep="")
@@ -79,12 +79,12 @@ adm_update = function(...) {
         
         #add columns to database
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data ADD COLUMN ",temp_var_data," DOUBLE NULL DEFAULT NULL;",sep=""))
-        dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_setup ADD COLUMN ",temp_var_setup," INT NULL DEFAULT NULL;",sep=""))
+        dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_drilldown_setup ADD COLUMN ",temp_var_setup," INT NULL DEFAULT NULL;",sep=""))
         
         #add tables to database (only one table)
         dbGetQuery(conn,paste("CREATE TABLE",
                               paste("dsh_label_",temp_label1,sep=""),
-                              "(`label` VARCHAR(191) NOT NULL COLLATE 'utf8mb4_bin',`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,PRIMARY KEY (`id`),UNIQUE INDEX `uni` (`label`)) COLLATE='utf8mb4_unicode_ci'ENGINE=InnoDB;"))
+                              "(`label` VARCHAR(191) NOT NULL COLLATE 'utf8mb4_bin',`id` INT NOT NULL AUTO_INCREMENT,PRIMARY KEY (`id`),UNIQUE INDEX `uni` (`label`)) COLLATE='utf8mb4_unicode_ci'ENGINE=InnoDB;"))
         
       } else {
         #for adding filter variables
@@ -95,15 +95,15 @@ adm_update = function(...) {
         
         #add columns to database
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data ADD COLUMN ",temp_var_data," INT NULL DEFAULT NULL;",sep=""))
-        dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_setup ADD COLUMN ",temp_var_setup," INT NULL DEFAULT NULL;",sep=""))
+        dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_drilldown_setup ADD COLUMN ",temp_var_setup," INT NULL DEFAULT NULL;",sep=""))
         
         #add tables to database (two tables to add)
         dbGetQuery(conn,paste("CREATE TABLE",
                               paste("dsh_label_",temp_label1,sep=""),
-                              "(`label` VARCHAR(191) NOT NULL COLLATE 'utf8mb4_bin',`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,PRIMARY KEY (`id`),UNIQUE INDEX `uni` (`label`)) COLLATE='utf8mb4_unicode_ci'ENGINE=InnoDB;"))
+                              "(`label` VARCHAR(191) NOT NULL COLLATE 'utf8mb4_bin',`id` INT NOT NULL AUTO_INCREMENT,PRIMARY KEY (`id`),UNIQUE INDEX `uni` (`label`)) COLLATE='utf8mb4_unicode_ci'ENGINE=InnoDB;"))
         dbGetQuery(conn,paste("CREATE TABLE",
                               paste("dsh_label_",temp_label2,sep=""),
-                              "(`label` VARCHAR(191) NOT NULL COLLATE 'utf8mb4_bin',`id` INT UNSIGNED NOT NULL AUTO_INCREMENT,PRIMARY KEY (`id`),UNIQUE INDEX `uni` (`label`)) COLLATE='utf8mb4_unicode_ci'ENGINE=InnoDB;"))
+                              "(`label` VARCHAR(191) NOT NULL COLLATE 'utf8mb4_bin',`id` INT NOT NULL AUTO_INCREMENT,PRIMARY KEY (`id`),UNIQUE INDEX `uni` (`label`)) COLLATE='utf8mb4_unicode_ci'ENGINE=InnoDB;"))
         
         
       }
@@ -162,7 +162,7 @@ adm_update = function(...) {
   ########################
   print("Note: Now uploading home_setup.")
   setin[setin==""]=NA
-  setin = setin[,!sapply(setin, function (k) all(is.na(k))),with=F]
+  # setin = setin[,!sapply(setin, function (k) all(is.na(k))),with=F]
   setuplabel=list()
   lkupsetuplist=colnames(setin)[grep("var_",colnames(setin))]
   label2=paste(rep("dsh_label_",length(lkupsetuplist)),lkupsetuplist,sep="")
@@ -183,6 +183,14 @@ adm_update = function(...) {
   if(nrow(market_check)!=1) {
     stop ("Note: Market level Error")
   }
+#   
+  map.var=unlist(strsplit(homesetup$map_var,","))
+  map.var=data.table(label=map.var)
+  map.var=merge(map.var,data.table(dbGetQuery(conn,"select * from dsh_label_var")),by=c("label"),all.x=T)
+  if(sum(is.na(map.var$id))!=0) {
+    stop ("Note: please check your map_var in home_setup")
+  }
+  homesetup[,map_var:=paste(map.var$id,collapse=",")]
   
   
   homesetup$date_start=as.Date(homesetup$date_start,"%m/%d/%Y")
@@ -217,5 +225,22 @@ adm_update = function(...) {
     )
     
   }
+  
+  #############################
+  #update drilldown setup page#
+  #############################
+  
+  print("Note: Now Uploading Drilldown Setup.")
+  var.id=data.table(dbGetQuery(conn,"select * from dsh_label_var"))
+  setnames(var.id,c("label","id"),c("var","var_id"))
+  setin=merge(setin,var.id,by=c("var"),all.x=T)
+  if(any(is.na(setin$var_id))) {
+    stop ("Please check your input_setup file. There is an var_name error.")
+  }
+  setin[,var:=NULL]
+  setin[,client_id:=client_id]
+  dbGetQuery(conn,paste("delete from dsh_modelinput_drilldown_setup where client_id=",client_id,sep=""))
+  dbWriteTable(conn,"dsh_modelinput_drilldown_setup",setin,append=T,row.names = F,header=F)
+  print("Note: Done.")
   
 }
