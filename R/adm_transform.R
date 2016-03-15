@@ -47,3 +47,4 @@ setnames(mk,c("var","label"))
 setkey(export.lkup.final,var)
 setkey(mk,var)
 export.lkup.final[mk,':='(label=i.label)]
+export.lkup.final=export.lkup.final[!is.na(label)]
