@@ -1,15 +1,5 @@
 type,var,var_m_1,var_m_2,var_m_3,var_m_4,var_f_4,var_f_3,var_f_2,var_f_1
-1,Sales - Other,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Discount Cherry Picker,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Kohl's Full Store Loyalist,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Kohl's In-Store Enthusiast,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Kohl's Kids,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Kohl's Mens,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Kohl's Online Enthusiast,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Misses Exclusive,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,Occasional Big Basket,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,One and Done In-Store,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
-1,One and Done Online,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
+1,,REGULAR_PRICE,FINAL_PRICE,UNITS,PURCH_TRANS,Segment,Kohls Charge,Loyalist,New-Existing
 2,Display,spend,impression,click,,,,,
 2,Local Mobile,spend,impression,click,,,,,
 2,Local Radio,spend,impression,GRP,,,,,

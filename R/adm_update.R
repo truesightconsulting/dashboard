@@ -80,6 +80,7 @@ adm_update = function(...) {
         #add columns to database
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data ADD COLUMN ",temp_var_data," DOUBLE NULL DEFAULT NULL;",sep=""))
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_drilldown_setup ADD COLUMN ",temp_var_setup," INT NULL DEFAULT NULL;",sep=""))
+        # dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_dim_f ADD COLUMN ",temp_var_data," DOUBLE NULL DEFAULT NULL;",sep=""))
         
         #add tables to database (only one table)
         dbGetQuery(conn,paste("CREATE TABLE",
@@ -96,7 +97,8 @@ adm_update = function(...) {
         #add columns to database
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data ADD COLUMN ",temp_var_data," INT NULL DEFAULT NULL;",sep=""))
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_drilldown_setup ADD COLUMN ",temp_var_setup," INT NULL DEFAULT NULL;",sep=""))
-        
+        dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_dim_f ADD COLUMN ",temp_var_data," INT NULL DEFAULT NULL;",sep=""))
+
         #add tables to database (two tables to add)
         dbGetQuery(conn,paste("CREATE TABLE",
                               paste("dsh_label_",temp_label1,sep=""),
@@ -162,7 +164,7 @@ adm_update = function(...) {
   ########################
   print("Note: Now uploading home_setup.")
   setin[setin==""]=NA
-  # setin = setin[,!sapply(setin, function (k) all(is.na(k))),with=F]
+  setin = setin[,!sapply(setin, function (k) all(is.na(k))),with=F]
   setuplabel=list()
   lkupsetuplist=colnames(setin)[grep("var_",colnames(setin))]
   label2=paste(rep("dsh_label_",length(lkupsetuplist)),lkupsetuplist,sep="")
@@ -234,13 +236,42 @@ adm_update = function(...) {
   var.id=data.table(dbGetQuery(conn,"select * from dsh_label_var"))
   setnames(var.id,c("label","id"),c("var","var_id"))
   setin=merge(setin,var.id,by=c("var"),all.x=T)
-  if(any(is.na(setin$var_id))) {
+  if(sum(is.na(setin$var_id))!=1) {
     stop ("Please check your input_setup file. There is an var_name error.")
   }
   setin[,var:=NULL]
   setin[,client_id:=client_id]
+  date_setin=homesetup[,c("date_start","date_end","date_min","date_max"),with=F]
+  setin=cbind(setin,date_setin)
   dbGetQuery(conn,paste("delete from dsh_modelinput_drilldown_setup where client_id=",client_id,sep=""))
   dbWriteTable(conn,"dsh_modelinput_drilldown_setup",setin,append=T,row.names = F,header=F)
+
+  
+  #####################
+  #update export files#
+  #####################
+  export.final[,client_id:=client_id]
+  export.lkup.final[,client_id:=client_id]
+  old_export_name=data.table(
+    dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_data_export'")))[["COLUMN_NAME"]]
+  new_export_name=colnames(export.final)
+  col_to_add_export=new_export_name[!new_export_name%in%old_export_name]
+  
+  if(length(col_to_add_export)!=0) {
+    for(i in 1:length(col_to_add_export)) {
+      dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data_export ADD COLUMN ",col_to_add_export[i]," DOUBLE NULL DEFAULT NULL;",sep=""))
+    }
+  }
+  
+  print("Note: Now uploading Raw Database.")
+  if(update) {
+    # delete all current records from the client
+    dbGetQuery(conn,paste("delete from dsh_modelinput_data_export where client_id=",client_id,sep=""))
+    dbGetQuery(conn,paste("delete from dsh_modelinput_export_lkup where client_id=",client_id,sep=""))
+  } 
+  
+  dbWriteTable(conn,"dsh_modelinput_data_export",export.final,append=T,row.names = F,header=F)
+  dbWriteTable(conn,"dsh_modelinput_export_lkup",export.lkup.final,append=T,row.names = F,header=F)
   print("Note: Done.")
   
 }
