@@ -4,7 +4,7 @@ adm_update = function(...) {
   ##################
   print("Note: Now checking client set up.")
   client_ext=data.table(dbGetQuery(conn,"select name, id from clients"))
-  client_current=current=data.table(name=homesetup$client_name)
+  client_current=current=data.table(name=setup$client_name)
   is.client.ext = client_current %in% client_ext$name
   if(is.new.client ==T & is.client.ext ==T) {
     stop ("Note: The new client name is already exist.")
@@ -97,7 +97,7 @@ adm_update = function(...) {
         #add columns to database
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data ADD COLUMN ",temp_var_data," INT NULL DEFAULT NULL;",sep=""))
         dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_drilldown_setup ADD COLUMN ",temp_var_setup," INT NULL DEFAULT NULL;",sep=""))
-        dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_dim_f ADD COLUMN ",temp_var_data," INT NULL DEFAULT NULL;",sep=""))
+        # dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_dim_f ADD COLUMN ",temp_var_data," INT NULL DEFAULT NULL;",sep=""))
 
         #add tables to database (two tables to add)
         dbGetQuery(conn,paste("CREATE TABLE",
@@ -197,7 +197,7 @@ adm_update = function(...) {
   
   homesetup$date_start=as.Date(homesetup$date_start,"%m/%d/%Y")
   homesetup$date_end=as.Date(homesetup$date_end,"%m/%d/%Y")
-  homesetup[,c("update","is.staging","is.new.client","client_name"):=NULL]
+  # homesetup[,c("client_name"):=NULL]
   homesetup=cbind(homesetup,market_check)
   homesetup[,client_id:=client_id]
   date_minmax = dbGetQuery(conn,paste("select min(date) as date_min, max(date) as date_max from dsh_modelinput_data where client_id =",client_id,sep=""))
@@ -214,6 +214,31 @@ adm_update = function(...) {
   print("Note: Now Generating Dimension pages.")
   dim_table=c("d","f","map","market","market_drilldown")
   dim_table = paste(rep("dsh_modelinput_dim_",length(dim_table)),dim_table,sep="")
+  dim_label=gsub("var_","",new_colnames_setup)
+  
+  add_column = function(vector,table) {
+    if(length(vector)!=0) {
+      for(i in 1:length(vector)) {
+        dbGetQuery(conn,paste("ALTER TABLE ",table," ADD COLUMN ",vector[i]," INT NULL DEFAULT NULL;",sep=""))
+      }
+    }
+  }
+  
+  
+  d_label_check=dim_label[grep("d_",dim_label)]
+  d_label_check=d_label_check[!d_label_check%in% data.table(dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_dim_d'")))[["COLUMN_NAME"]]]
+  f_label_check=dim_label[grep("f_",dim_label)]
+  f_label_check=f_label_check[!f_label_check%in% data.table(dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_dim_f'")))[["COLUMN_NAME"]]]
+  market_label_check=dim_label[grep("market_",dim_label)]
+  market_label_check1=market_label_check[!market_label_check%in% data.table(dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_dim_market'")))[["COLUMN_NAME"]]]
+  market_label_check2=market_label_check[!market_label_check%in% data.table(dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_dim_market_drilldown'")))[["COLUMN_NAME"]]]
+  
+  add_column(d_label_check,"dsh_modelinput_dim_d")
+  add_column(f_label_check,"dsh_modelinput_dim_f")
+  add_column(market_label_check1,"dsh_modelinput_dim_market")
+  add_column(market_label_check2,"dsh_modelinput_dim_market_drilldown")
+  
+  
   
   for(i in 1:length(dim_table)) {
     temp_name=data.table(dbGetQuery(conn,paste("SELECT * from Information_schema.columns
@@ -245,33 +270,35 @@ adm_update = function(...) {
   setin=cbind(setin,date_setin)
   dbGetQuery(conn,paste("delete from dsh_modelinput_drilldown_setup where client_id=",client_id,sep=""))
   dbWriteTable(conn,"dsh_modelinput_drilldown_setup",setin,append=T,row.names = F,header=F)
-
   
-  #####################
-  #update export files#
-  #####################
-  export.final[,client_id:=client_id]
-  export.lkup.final[,client_id:=client_id]
-  old_export_name=data.table(
-    dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_data_export'")))[["COLUMN_NAME"]]
-  new_export_name=colnames(export.final)
-  col_to_add_export=new_export_name[!new_export_name%in%old_export_name]
-  
-  if(length(col_to_add_export)!=0) {
-    for(i in 1:length(col_to_add_export)) {
-      dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data_export ADD COLUMN ",col_to_add_export[i]," DOUBLE NULL DEFAULT NULL;",sep=""))
-    }
-  }
-  
-  print("Note: Now uploading Raw Database.")
-  if(update) {
-    # delete all current records from the client
-    dbGetQuery(conn,paste("delete from dsh_modelinput_data_export where client_id=",client_id,sep=""))
-    dbGetQuery(conn,paste("delete from dsh_modelinput_export_lkup where client_id=",client_id,sep=""))
-  } 
-  
-  dbWriteTable(conn,"dsh_modelinput_data_export",export.final,append=T,row.names = F,header=F)
-  dbWriteTable(conn,"dsh_modelinput_export_lkup",export.lkup.final,append=T,row.names = F,header=F)
   print("Note: Done.")
+  return(list(client_id=client_id))
+  
+#   #####################
+#   #update export files#
+#   #####################
+#   export.final[,client_id:=client_id]
+#   export.lkup.final[,client_id:=client_id]
+#   old_export_name=data.table(
+#     dbGetQuery(conn,paste("SELECT * from Information_schema.columns  where Table_name like 'dsh_modelinput_data_export'")))[["COLUMN_NAME"]]
+#   new_export_name=colnames(export.final)
+#   col_to_add_export=new_export_name[!new_export_name%in%old_export_name]
+#   
+#   if(length(col_to_add_export)!=0) {
+#     for(i in 1:length(col_to_add_export)) {
+#       dbGetQuery(conn,paste("ALTER TABLE dsh_modelinput_data_export ADD COLUMN ",col_to_add_export[i]," DOUBLE NULL DEFAULT NULL;",sep=""))
+#     }
+#   }
+#   
+#   print("Note: Now uploading Raw Database.")
+#   if(update) {
+#     # delete all current records from the client
+#     dbGetQuery(conn,paste("delete from dsh_modelinput_data_export where client_id=",client_id,sep=""))
+#     dbGetQuery(conn,paste("delete from dsh_modelinput_export_lkup where client_id=",client_id,sep=""))
+#   } 
+#   
+#   dbWriteTable(conn,"dsh_modelinput_data_export",export.final,append=T,row.names = F,header=F)
+#   dbWriteTable(conn,"dsh_modelinput_export_lkup",export.lkup.final,append=T,row.names = F,header=F)
+  
   
 }

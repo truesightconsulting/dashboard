@@ -1,0 +1,12 @@
+type,var,var_m_1,var_m_2,var_m_3,var_m_4,var_f_4,var_f_3,var_f_2,var_f_1
+1,,Regular Price,Final Price,Units,Purch Trans,Segment,Kohls Charge,Loyalist,New-Existing
+2,Display,Spend,Impression,Click,,,,,
+2,Local Mobile,Spend,Impression,Click,,,,,
+2,Local Radio,Spend,Impression,GRP,,,,,
+2,Local TV,Spend,Impression,GRP,,,,,
+2,Magazine,Spend,Impression,GRP,,,,,
+2,Network Radio,Spend,Impression,GRP,,,,,Type
+2,National TV,Spend,Impression,,,,,,
+2,OOH,Spend,Impression,,,,,,
+2,Search,Spend,Impression,Click,,,Type,Resource,Device
+2,Tab,Spend,Circulation,,,,,,Type
