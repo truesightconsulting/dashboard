@@ -164,7 +164,8 @@ adm_update = function(...) {
   ########################
   print("Note: Now uploading home_setup.")
   setin[setin==""]=NA
-  setin = setin[,!sapply(setin, function (k) all(is.na(k))),with=F]
+  # setin = setin[,!sapply(setin, function (k) all(is.na(k))),with=F]
+  setin=setin[,colSums(is.na(setin))<nrow(setin),with=F]
   setuplabel=list()
   lkupsetuplist=colnames(setin)[grep("var_",colnames(setin))]
   label2=paste(rep("dsh_label_",length(lkupsetuplist)),lkupsetuplist,sep="")

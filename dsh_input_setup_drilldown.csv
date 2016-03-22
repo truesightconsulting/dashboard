@@ -1,5 +1,5 @@
 type,var,var_m_1,var_m_2,var_m_3,var_m_4,var_f_4,var_f_3,var_f_2,var_f_1
-1,,Regular Price,Final Price,Units,Purch Trans,Segment,Kohls Charge,Loyalist,New-Existing
+1,,Final Price,Regular Price,Units,Purch Trans,Segment,Kohls Charge,Loyalist,New-Existing
 2,Display,Spend,Impression,Click,,,,,
 2,Local Mobile,Spend,Impression,Click,,,,,
 2,Local Radio,Spend,Impression,GRP,,,,,

@@ -334,91 +334,91 @@ new_loy_kc_missex_units,1,Misses Exclusive,New Customer,Loyalist,Kohl's Charge,M
 new_loy_kc_ocbb_units,1,Occasional Big Basket,New Customer,Loyalist,Kohl's Charge,Occasional Big Basket,m_3,Occasional Big Basket_New Customer_Loyalist_Kohl's Charge_Units
 new_loy_kc_odis_units,1,One and Done In-Store,New Customer,Loyalist,Kohl's Charge,One and Done In-Store,m_3,One and Done In-Store_New Customer_Loyalist_Kohl's Charge_Units
 new_loy_kc_odol_units,1,One and Done Online,New Customer,Loyalist,Kohl's Charge,One and Done Online,m_3,One and Done Online_New Customer_Loyalist_Kohl's Charge_Units
-ex_nloy_nkc_other_trans,1,Sales - Other,Existing Customer,Non Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Non Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_kids_trans,1,Kohl's Kids,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_mens_trans,1,Kohl's Mens,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_missex_trans,1,Misses Exclusive,Existing Customer,Non Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Non Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_odis_trans,1,One and Done In-Store,Existing Customer,Non Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_nkc_odol_trans,1,One and Done Online,Existing Customer,Non Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Non Loyalist_Non Kohl's Charge_Tans
-ex_nloy_kc_other_trans,1,Sales - Other,Existing Customer,Non Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Non Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_kids_trans,1,Kohl's Kids,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_mens_trans,1,Kohl's Mens,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_missex_trans,1,Misses Exclusive,Existing Customer,Non Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Non Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_odis_trans,1,One and Done In-Store,Existing Customer,Non Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_nloy_kc_odol_trans,1,One and Done Online,Existing Customer,Non Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Non Loyalist_Kohl's Charge_Tans
-ex_loy_nkc_other_trans,1,Sales - Other,Existing Customer,Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_kids_trans,1,Kohl's Kids,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_mens_trans,1,Kohl's Mens,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_missex_trans,1,Misses Exclusive,Existing Customer,Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_odis_trans,1,One and Done In-Store,Existing Customer,Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_nkc_odol_trans,1,One and Done Online,Existing Customer,Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Loyalist_Non Kohl's Charge_Tans
-ex_loy_kc_other_trans,1,Sales - Other,Existing Customer,Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_kids_trans,1,Kohl's Kids,Existing Customer,Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_mens_trans,1,Kohl's Mens,Existing Customer,Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_missex_trans,1,Misses Exclusive,Existing Customer,Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_odis_trans,1,One and Done In-Store,Existing Customer,Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Loyalist_Kohl's Charge_Tans
-ex_loy_kc_odol_trans,1,One and Done Online,Existing Customer,Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Loyalist_Kohl's Charge_Tans
-new_nloy_nkc_other_trans,1,Sales - Other,New Customer,Non Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_dcp_trans,1,Discount Cherry Picker,New Customer,Non Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_kids_trans,1,Kohl's Kids,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_mens_trans,1,Kohl's Mens,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_missex_trans,1,Misses Exclusive,New Customer,Non Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_ocbb_trans,1,Occasional Big Basket,New Customer,Non Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_odis_trans,1,One and Done In-Store,New Customer,Non Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_nkc_odol_trans,1,One and Done Online,New Customer,Non Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Non Loyalist_Non Kohl's Charge_Tans
-new_nloy_kc_other_trans,1,Sales - Other,New Customer,Non Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_dcp_trans,1,Discount Cherry Picker,New Customer,Non Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Non Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Non Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_kids_trans,1,Kohl's Kids,New Customer,Non Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_mens_trans,1,Kohl's Mens,New Customer,Non Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Non Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_missex_trans,1,Misses Exclusive,New Customer,Non Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_ocbb_trans,1,Occasional Big Basket,New Customer,Non Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_odis_trans,1,One and Done In-Store,New Customer,Non Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_nloy_kc_odol_trans,1,One and Done Online,New Customer,Non Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Non Loyalist_Kohl's Charge_Tans
-new_loy_nkc_other_trans,1,Sales - Other,New Customer,Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_dcp_trans,1,Discount Cherry Picker,New Customer,Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_kids_trans,1,Kohl's Kids,New Customer,Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_mens_trans,1,Kohl's Mens,New Customer,Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_missex_trans,1,Misses Exclusive,New Customer,Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_ocbb_trans,1,Occasional Big Basket,New Customer,Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_odis_trans,1,One and Done In-Store,New Customer,Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_nkc_odol_trans,1,One and Done Online,New Customer,Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Loyalist_Non Kohl's Charge_Tans
-new_loy_kc_other_trans,1,Sales - Other,New Customer,Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_dcp_trans,1,Discount Cherry Picker,New Customer,Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_kids_trans,1,Kohl's Kids,New Customer,Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_mens_trans,1,Kohl's Mens,New Customer,Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_missex_trans,1,Misses Exclusive,New Customer,Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_ocbb_trans,1,Occasional Big Basket,New Customer,Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_odis_trans,1,One and Done In-Store,New Customer,Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Loyalist_Kohl's Charge_Tans
-new_loy_kc_odol_trans,1,One and Done Online,New Customer,Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Loyalist_Kohl's Charge_Tans
+ex_nloy_nkc_other_trans,1,Sales - Other,Existing Customer,Non Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Non Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_kids_trans,1,Kohl's Kids,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_mens_trans,1,Kohl's Mens,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Non Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_missex_trans,1,Misses Exclusive,Existing Customer,Non Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Non Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_odis_trans,1,One and Done In-Store,Existing Customer,Non Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_nkc_odol_trans,1,One and Done Online,Existing Customer,Non Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Non Loyalist_Non Kohl's Charge_Trans
+ex_nloy_kc_other_trans,1,Sales - Other,Existing Customer,Non Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Non Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_kids_trans,1,Kohl's Kids,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_mens_trans,1,Kohl's Mens,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Non Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_missex_trans,1,Misses Exclusive,Existing Customer,Non Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Non Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_odis_trans,1,One and Done In-Store,Existing Customer,Non Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_nloy_kc_odol_trans,1,One and Done Online,Existing Customer,Non Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Non Loyalist_Kohl's Charge_Trans
+ex_loy_nkc_other_trans,1,Sales - Other,Existing Customer,Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_kids_trans,1,Kohl's Kids,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_mens_trans,1,Kohl's Mens,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_missex_trans,1,Misses Exclusive,Existing Customer,Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_odis_trans,1,One and Done In-Store,Existing Customer,Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_nkc_odol_trans,1,One and Done Online,Existing Customer,Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Loyalist_Non Kohl's Charge_Trans
+ex_loy_kc_other_trans,1,Sales - Other,Existing Customer,Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_dcp_trans,1,Discount Cherry Picker,Existing Customer,Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,Existing Customer,Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,Existing Customer,Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_kids_trans,1,Kohl's Kids,Existing Customer,Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_mens_trans,1,Kohl's Mens,Existing Customer,Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_oleth_trans,1,Kohl's Online Enthusiast,Existing Customer,Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_missex_trans,1,Misses Exclusive,Existing Customer,Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_ocbb_trans,1,Occasional Big Basket,Existing Customer,Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_odis_trans,1,One and Done In-Store,Existing Customer,Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_Existing Customer_Loyalist_Kohl's Charge_Trans
+ex_loy_kc_odol_trans,1,One and Done Online,Existing Customer,Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_Existing Customer_Loyalist_Kohl's Charge_Trans
+new_nloy_nkc_other_trans,1,Sales - Other,New Customer,Non Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_dcp_trans,1,Discount Cherry Picker,New Customer,Non Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_kids_trans,1,Kohl's Kids,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_mens_trans,1,Kohl's Mens,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Non Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_missex_trans,1,Misses Exclusive,New Customer,Non Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_ocbb_trans,1,Occasional Big Basket,New Customer,Non Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_odis_trans,1,One and Done In-Store,New Customer,Non Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_nkc_odol_trans,1,One and Done Online,New Customer,Non Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Non Loyalist_Non Kohl's Charge_Trans
+new_nloy_kc_other_trans,1,Sales - Other,New Customer,Non Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_dcp_trans,1,Discount Cherry Picker,New Customer,Non Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Non Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Non Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_kids_trans,1,Kohl's Kids,New Customer,Non Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_mens_trans,1,Kohl's Mens,New Customer,Non Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Non Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_missex_trans,1,Misses Exclusive,New Customer,Non Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_ocbb_trans,1,Occasional Big Basket,New Customer,Non Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_odis_trans,1,One and Done In-Store,New Customer,Non Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_nloy_kc_odol_trans,1,One and Done Online,New Customer,Non Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Non Loyalist_Kohl's Charge_Trans
+new_loy_nkc_other_trans,1,Sales - Other,New Customer,Loyalist,Non Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_dcp_trans,1,Discount Cherry Picker,New Customer,Loyalist,Non Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Loyalist,Non Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Loyalist,Non Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_kids_trans,1,Kohl's Kids,New Customer,Loyalist,Non Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_mens_trans,1,Kohl's Mens,New Customer,Loyalist,Non Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Loyalist,Non Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_missex_trans,1,Misses Exclusive,New Customer,Loyalist,Non Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_ocbb_trans,1,Occasional Big Basket,New Customer,Loyalist,Non Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_odis_trans,1,One and Done In-Store,New Customer,Loyalist,Non Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_nkc_odol_trans,1,One and Done Online,New Customer,Loyalist,Non Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Loyalist_Non Kohl's Charge_Trans
+new_loy_kc_other_trans,1,Sales - Other,New Customer,Loyalist,Kohl's Charge,Sales - Other,m_4,Sales - Other_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_dcp_trans,1,Discount Cherry Picker,New Customer,Loyalist,Kohl's Charge,Discount Cherry Picker,m_4,Discount Cherry Picker_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_fsloy_trans,1,Kohl's Full Store Loyalist,New Customer,Loyalist,Kohl's Charge,Kohl's Full Store Loyalist,m_4,Kohl's Full Store Loyalist_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_iseth_trans,1,Kohl's In-Store Enthusiast,New Customer,Loyalist,Kohl's Charge,Kohl's In-Store Enthusiast,m_4,Kohl's In-Store Enthusiast_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_kids_trans,1,Kohl's Kids,New Customer,Loyalist,Kohl's Charge,Kohl's Kids,m_4,Kohl's Kids_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_mens_trans,1,Kohl's Mens,New Customer,Loyalist,Kohl's Charge,Kohl's Mens,m_4,Kohl's Mens_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_oleth_trans,1,Kohl's Online Enthusiast,New Customer,Loyalist,Kohl's Charge,Kohl's Online Enthusiast,m_4,Kohl's Online Enthusiast_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_missex_trans,1,Misses Exclusive,New Customer,Loyalist,Kohl's Charge,Misses Exclusive,m_4,Misses Exclusive_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_ocbb_trans,1,Occasional Big Basket,New Customer,Loyalist,Kohl's Charge,Occasional Big Basket,m_4,Occasional Big Basket_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_odis_trans,1,One and Done In-Store,New Customer,Loyalist,Kohl's Charge,One and Done In-Store,m_4,One and Done In-Store_New Customer_Loyalist_Kohl's Charge_Trans
+new_loy_kc_odol_trans,1,One and Done Online,New Customer,Loyalist,Kohl's Charge,One and Done Online,m_4,One and Done Online_New Customer_Loyalist_Kohl's Charge_Trans
