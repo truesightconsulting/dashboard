@@ -12,6 +12,7 @@ upload_cmd=paste(path_system,"pscp -i ",path_key," ",path_client,"raw_data.zip "
 shell(upload_cmd)
 file.remove("output_export_data.csv")
 file.remove("output_export_lookup.csv")
+file.remove("raw_data.zip")
 
 if(!is.staging) {
   zip_input=paste(path_system,"7za a -tzip dsh_modelinput_data.zip ",path_client,"dsh_modelinput_data.csv",sep="")
@@ -19,4 +20,5 @@ if(!is.staging) {
   upload_input=paste(path_system,"pscp -i ",path_key," ",path_client,"dsh_modelinput_data.zip ",export_root,run$client_id,sep="")
   shell(upload_input)
   file.remove("dsh_modelinput_data.zip")
+  file.remove("raw_data.zip")
 }

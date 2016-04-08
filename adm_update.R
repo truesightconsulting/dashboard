@@ -4,7 +4,7 @@ adm_update = function(...) {
   ##################
   print("Note: Now checking client set up.")
   client_ext=data.table(dbGetQuery(conn,"select name, id from clients"))
-  client_current=current=data.table(name=setup$client_name)
+  client_current=current=data.table(name=client_name)
   is.client.ext = client_current %in% client_ext$name
   if(is.new.client ==T & is.client.ext ==T) {
     stop ("Note: The new client name is already exist.")
