@@ -15,7 +15,7 @@ final.process=merge(final.process,varlkup,by=c("variable"),all.x=T)
 final.process=final.process[!is.na(var)]
 final.process=final.process[!is.na(d_1)]
 
-export=final.process[,c(time_period,dma,"value","variable"),with=F]
+# export=final.process[,c(time_period,dma,"value","variable"),with=F]
 export.lkup=unique(final.process[,c("variable","export_1"),with=F])
 final.process[,c("variable","export_1"):=NULL]
 
@@ -46,3 +46,24 @@ setkey(mk,var)
 export.lkup.final[mk,':='(label=i.label)]
 export.lkup.final=export.lkup.final[!is.na(label)]
 
+
+
+
+##################
+#update client id#
+##################
+print("Note: Now checking client set up.")
+client_ext=data.table(dbGetQuery(conn,"select name, id from clients"))
+client_current=current=data.table(name=client_name)
+is.client.ext = client_current %in% client_ext$name
+if(is.new.client ==T & is.client.ext ==T) {
+  stop ("Note: The new client name is already exist.")
+} else if (is.new.client ==F & is.client.ext ==F){
+  stop ("Note: The client is not in the database.")
+} else if (is.new.client ==T & is.client.ext ==F) {
+  dbWriteTable(conn,"clients",client_current,append=T,row.names = F,header=F)
+  client_ext=data.table(dbGetQuery(conn,"select name, id from clients"))
+  client_id = client_ext[name==client_current,]$id
+} else if (is.new.client ==F & is.client.ext ==T){
+  client_id = client_ext[name==client_current,]$id
+}
